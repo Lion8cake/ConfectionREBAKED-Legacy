@@ -1,0 +1,12 @@
+Welcome to the source code of Lion8cake's Confection mod
+
+If you compile this through tml it will work like the V17.1 Beta.
+
+We are almost complete with the confection! :)
+if you would like to help us finish the last few things join the discord at https://discord.gg/JwEKrVhjA6
+
+If you are using this to make your own hallowed alternative I would sugest giving this mod a shout out or 
+link to say that you got some of the code from here.
+
+Thanks for downloading the confection
+-Lion8cake

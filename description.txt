@@ -1,0 +1,71 @@
+===========================================
+Confection REBAKED
+===========================================
+Beta 0.17.1
+Seventeenth public version
+
+WE NEED YOUR HELP
+We are in dire need of people that can program NPCs and custom AIs. If you can create custom AIs and can help out join our discord and message me 
+-Lion8cake
+
+Welcome to the Confection 
+This mod was an unreleased mod back near the end of 2014 beginning of 2015 and was never released. A few attempts to remake it for TML were announced but never realeased. The Forum can be found here: https://forums.terraria.org/index.php?threads/sprites-the-confection-the-desserted-land-an-alternate-hallow.6352/
+You can join our discord at https://discord.gg/JwEKrVhjA6. If you have any sugestions contact me through discord Lion8cake #5160
+/!\ This is an almost complete version of the mod and some things are less likely to change may be subject to change. I advise you always make a backup of your world before using this mod. If you find any bugs please message me or report it in the discord so I can try to fix them./!\
+-Lion8cake
+===========================================
+Change log
+===========================================
+
+0.17.1
+
+-Fixed pwnhammer not being able to be crated at heavenly forge
+-Fixed Grand Slammer not being able to be crafted at heavenly forge
+-Removed Mighty Wind debuff while in a confection sandstorm since the overlay effect does not play 
+
+0.17.0
+
+-Added Drops to dudley and ice-screamer
+-Added Ice version of the ice-screamer
+-Added Animation to the projectile of the Dimentional Split
+-Added Yum wall
+-Changed Cherry Bombs to deal ranged damage instead of melee
+-Changed The sound of the neapolinite repeater
+-Changed Flight of the wild airy blue to be reduced by 25%
+-Changed sprite of the cookie wheel
+-Changed Sprite of the unfirm
+-Changed rain colour in the confection to be the same as the water colour
+-Changed name of the key of blood to the key of spite
+-Fixed World creation UI not working
+-Fixed Demon Altars spawning pearlstone instead of creamstone
+-Removed key of decay 
+
+===========================================
+Credits - Programers
+===========================================
+Lion8cake - Main dev 
+Cace - For the very tricky tile spreading code, the RoD alt and much cleaner biome code
+Ghasttear1 - For the menu UI
+Foxyboy55 - many bug fixes an a few texture changes
+CastledKing2341 - For the awesome and very polished meowzer npc
+Basically, I am little Fox - for cream fox pet and Biome chest and Biome generation
+
+===========================================
+Credits - Artists
+===========================================
+SnickerBobble - Original concept creator of the Confection
+Delicios Satern - Music
+Dakotaspine - New background texture and new Crazy cone texture
+Mddznyan - Creating textures for some items and the new logo
+Neobind - Textures for a few things
+
+===========================================
+1.4 Convertion credits
+===========================================
+Lion8cake - The person who spent most of his week converting stuff for 1.4
+UnboxingVideo - The new 1.4 tree code
+Basically, I am little Fox - help with converting some code, mostly world gen
+DireWolf420 - helped with a few errors I had 
+Mddznyan - few 1.4 textures, small icons, ect
+
+And to all the people that helped me out with coding problems and other issues, thank you!
