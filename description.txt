@@ -1,7 +1,7 @@
 ===========================================
 Confection REBAKED
 ===========================================
-Beta 0.17.1
+Beta 0.17.2
 Seventeenth public version
 
 WE NEED YOUR HELP
@@ -16,6 +16,13 @@ You can join our discord at https://discord.gg/JwEKrVhjA6. If you have any suges
 ===========================================
 Change log
 ===========================================
+
+0.17.2
+
+Added Confection Github. Link: https://github.com/Lion8cake/ConfectionREBAKED
+Added Fudge Chocolate Block
+Added Dryad World Confection Percentage
+Fixed a few things a long time ago that I forgor :skull:
 
 0.17.1
 
@@ -44,11 +51,11 @@ Change log
 Credits - Programers
 ===========================================
 Lion8cake - Main dev 
+Basically, I am little Fox - for cream fox pet, Biome chest, Biome generation and dryad world evil text
 Cace - For the very tricky tile spreading code, the RoD alt and much cleaner biome code
 Ghasttear1 - For the menu UI
 Foxyboy55 - many bug fixes an a few texture changes
 CastledKing2341 - For the awesome and very polished meowzer npc
-Basically, I am little Fox - for cream fox pet and Biome chest and Biome generation
 
 ===========================================
 Credits - Artists

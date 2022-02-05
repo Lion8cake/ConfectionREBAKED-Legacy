@@ -5,6 +5,7 @@ using TheConfectionRebirth.Gores;
 using Microsoft.Xna.Framework;
 using System;
 using TheConfectionRebirth.Items.Banners;
+using TheConfectionRebirth.Dusts;
 
 /*
  * TODO:
@@ -72,11 +73,10 @@ namespace TheConfectionRebirth.NPCs
 			bannerItem = ModContent.ItemType<PricksterBanner>();
 		}
 
-		public override void HitEffect(int hitDirection, double damage)
-		{
-			if (npc.life <= 0)
-			{
-				Gore.NewGore(npc.position, npc.velocity, 1);
+		public override void HitEffect(int hitDirection, double damage) {
+			int num = npc.life > 0 ? 1 : 5;
+			for (int k = 0; k < num; k++) {
+				Dust.NewDust(npc.position, npc.width, npc.height, ModContent.DustType<SacchariteCrystals>());
 			}
 		}
 

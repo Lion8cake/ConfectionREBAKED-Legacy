@@ -53,5 +53,10 @@ namespace TheConfectionRebirth.NPCs
 		   return spawnInfo.player.ZoneRockLayerHeight && spawnInfo.player.GetModPlayer<ConfectionPlayer>().ZoneConfection ? .08f : 0f;
 		 return 0;
         }
+		
+		public override void OnHitPlayer(Player target, int damage, bool crit)
+    	{
+    		target.AddBuff(BuffID.Confused, 180);
+    	}
 	}
 }
