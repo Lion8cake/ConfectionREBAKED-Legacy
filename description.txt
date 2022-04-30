@@ -1,7 +1,7 @@
 ===========================================
 Confection REBAKED
 ===========================================
-Beta 0.17.2
+Beta 0.17.4
 Seventeenth public version
 
 WE NEED YOUR HELP
@@ -16,6 +16,9 @@ You can join our discord at https://discord.gg/JwEKrVhjA6. If you have any suges
 ===========================================
 Change log
 ===========================================
+0.17.4
+Fixed bugged generation
+
 0.17.3 (0.18.1 because im stupid)
 Added Soda Pop as a part of a dare
 Removed April 1st Content
