@@ -25,5 +25,15 @@ namespace TheConfectionRebirth.Items.Placeable
 			item.consumable = true;
 			item.createTile = ModContent.TileType<Tiles.ChocolateFudge>();
 		}
+		
+		public override void AddRecipes()
+		{
+			ModRecipe recipe = new ModRecipe(mod);
+			recipe.AddIngredient(null, "Creamsand", 30);
+			recipe.AddIngredient(1134, 1);
+			recipe.AddTile(TileID.WorkBenches);
+			recipe.SetResult(this, 30);
+			recipe.AddRecipe();
+		}
 	}
 }

@@ -2,6 +2,7 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using TheConfectionRebirth.Buffs;
 
 namespace TheConfectionRebirth.Tiles
 {
@@ -36,5 +37,14 @@ namespace TheConfectionRebirth.Tiles
         {
           ConfectionWorld.InfectionSpread(i, j, "Confection");
         }
+		
+		public override void NearbyEffects(int i, int j, bool closer)
+		{
+			Player player = Main.LocalPlayer;
+			if ((int)Vector2.Distance(player.Center / 16f, new Vector2((float)i, (float)j)) <= 1)
+			{
+				player.AddBuff(ModContent.BuffType<Fudged>(), Main.rand.Next(10, 20));
+			}
+		}
 	}
 }
