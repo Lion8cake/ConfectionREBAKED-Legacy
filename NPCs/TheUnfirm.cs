@@ -12,7 +12,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace TheConfectionRebirth.NPCs
 {
-	public class TheUnfirm : ModNPC //If anyone wants to animate it, GO FOR IT!!!
+	public class TheUnfirm : ModNPC //If anyone wants to animate it or make actually good ai for it, GO FOR IT!!!
 	{
 		public override void SetStaticDefaults() {
 			DisplayName.SetDefault("The Unfirm");

@@ -28,7 +28,6 @@ namespace TheConfectionRebirth
 			IL.Terraria.Main.DrawMenu += Hooks.ConfectionWorldCreationUI.ILDrawMenu;
             if (!Main.dedServ)
             {
-				// Register a new music box
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Confection"), ItemType("ConfectionMusicBox"), TileType("ConfectionMusicBox"));
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/ConfectionUnderground"), ItemType("ConfectionUGMusicBox"), TileType("ConfectionUGMusicBox"));
             }

@@ -36,22 +36,22 @@ namespace TheConfectionRebirth.Projectiles
 		}
 		
 		public override void Kill(int timeLeft)
-	{
-		if (Main.myPlayer != projectile.owner)
 		{
-			return;
+			if (Main.myPlayer != projectile.owner)
+			{
+				return;
+			}
+			int choice = Main.rand.Next(1);
+			if (choice == 0)
+			{
+				Projectile.NewProjectile(projectile.Center.X, projectile.Center.Y, -8 + Main.rand.Next(0, 17), -8 + Main.rand.Next(0, 17), ModContent.ProjectileType<RockCandyShard>(), 24, 1f, Main.myPlayer, 0f, 0f);
+			}
+			
+			int num = Main.rand.Next(1);
+			if (num == 0)
+			{
+				Projectile.NewProjectile(projectile.Center.X, projectile.Center.Y, -8 + Main.rand.Next(0, 17), -8 + Main.rand.Next(0, 17), ModContent.ProjectileType<RockCandyShard>(), 24, 1f, Main.myPlayer, 0f, 0f);
+			}
 		}
-		int choice = Main.rand.Next(1);
-		if (choice == 0)
-		{
-			Projectile.NewProjectile(projectile.Center.X, projectile.Center.Y, -8 + Main.rand.Next(0, 17), -8 + Main.rand.Next(0, 17), ModContent.ProjectileType<RockCandyShard>(), 24, 1f, Main.myPlayer, 0f, 0f);
-		}
-		
-		int num = Main.rand.Next(1);
-		if (num == 0)
-		{
-			Projectile.NewProjectile(projectile.Center.X, projectile.Center.Y, -8 + Main.rand.Next(0, 17), -8 + Main.rand.Next(0, 17), ModContent.ProjectileType<RockCandyShard>(), 24, 1f, Main.myPlayer, 0f, 0f);
-		}
-	}
 	}
 }

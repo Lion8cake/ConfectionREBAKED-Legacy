@@ -47,30 +47,30 @@ namespace TheConfectionRebirth.NPCs
 		}
 		
 		public override void AI()
-	{
-		npc.ai[0] += 1f;
-		if (Main.rand.NextBool(1000) && NPC.CountNPCS(ModContent.NPCType<CrookedCookie>()) < 25)
 		{
-			npc.ai[0] = 0f;
-			int i = NPC.NewNPC((int)npc.Center.X, (int)npc.Center.Y, ModContent.NPCType<CrookedCookie>(), 0, npc.whoAmI);
-			Main.npc[i].velocity.X = Main.rand.NextFloat(-0.4f, 0.4f);
-			Main.npc[i].velocity.Y = Main.rand.NextFloat(-0.5f, -0.05f);
+			npc.ai[0] += 1f;
+			if (Main.rand.NextBool(1000) && NPC.CountNPCS(ModContent.NPCType<CrookedCookie>()) < 25)
+			{
+				npc.ai[0] = 0f;
+				int i = NPC.NewNPC((int)npc.Center.X, (int)npc.Center.Y, ModContent.NPCType<CrookedCookie>(), 0, npc.whoAmI);
+				Main.npc[i].velocity.X = Main.rand.NextFloat(-0.4f, 0.4f);
+				Main.npc[i].velocity.Y = Main.rand.NextFloat(-0.5f, -0.05f);
+			}
+			npc.ai[0] += 2f;
+			if (Main.rand.NextBool(1000) && NPC.CountNPCS(ModContent.NPCType<MintJr>()) < 25)
+			{
+				npc.ai[0] = 0f;
+				int i = NPC.NewNPC((int)npc.Center.X, (int)npc.Center.Y, ModContent.NPCType<MintJr>(), 0, npc.whoAmI);
+				Main.npc[i].velocity.X = Main.rand.NextFloat(-0.4f, 0.4f);
+				Main.npc[i].velocity.Y = Main.rand.NextFloat(-0.5f, -0.05f);
+			}
 		}
-		npc.ai[0] += 2f;
-		if (Main.rand.NextBool(1000) && NPC.CountNPCS(ModContent.NPCType<MintJr>()) < 25)
-		{
-			npc.ai[0] = 0f;
-			int i = NPC.NewNPC((int)npc.Center.X, (int)npc.Center.Y, ModContent.NPCType<MintJr>(), 0, npc.whoAmI);
-			Main.npc[i].velocity.X = Main.rand.NextFloat(-0.4f, 0.4f);
-			Main.npc[i].velocity.Y = Main.rand.NextFloat(-0.5f, -0.05f);
-		}
-	}
 	
-	public override void HitEffect(int hitDirection, double damage) {
+		public override void HitEffect(int hitDirection, double damage) {
 			if (npc.life <= 0) {
 				Vector2 spawnAt = npc.Center + new Vector2(0f, (float)npc.height / 2f);
 				NPC.NewNPC((int)spawnAt.X, (int)spawnAt.Y, ModContent.NPCType<CreamsandWitchPhase2>());
 			}
 		}
-  }	
+	}	
 }

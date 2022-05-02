@@ -69,15 +69,5 @@ namespace TheConfectionRebirth.Mounts
 			}
 			Rectangle rect = player.getRect();
 		}
-		internal class CcretSpecificData
-		{
-			internal int count;
-			internal float[] rotations;
-			internal static float[] offsets = new float[] { 0, 14, -14 };
-			public CcretSpecificData() {
-				count = 3;
-				rotations = new float[count];
-			}
-		}
 	}
 }

@@ -38,24 +38,24 @@ namespace TheConfectionRebirth.Projectiles
 		}
 		
 		public override void Kill(int timeLeft)
-	{
-		Main.PlaySound(SoundID.Item14, projectile.position);
-		for (int i = 0; i < 15; i++)
 		{
-			int dustIndex = Dust.NewDust(new Vector2(projectile.position.X, projectile.position.Y), projectile.width, projectile.height, 31, 0f, 0f, 100, default(Color), 2f);
-			Dust obj = Main.dust[dustIndex];
-			obj.velocity *= 1.4f;
+			Main.PlaySound(SoundID.Item14, projectile.position);
+			for (int i = 0; i < 15; i++)
+			{
+				int dustIndex = Dust.NewDust(new Vector2(projectile.position.X, projectile.position.Y), projectile.width, projectile.height, 31, 0f, 0f, 100, default(Color), 2f);
+				Dust obj = Main.dust[dustIndex];
+				obj.velocity *= 1.4f;
+			}
+			for (int j = 0; j < 10; j++)
+			{
+				int dustIndex2 = Dust.NewDust(new Vector2(projectile.position.X, projectile.position.Y), projectile.width, projectile.height, 6, 0f, 0f, 100, default(Color), 3f);
+				Main.dust[dustIndex2].noGravity = true;
+				Dust obj2 = Main.dust[dustIndex2];
+				obj2.velocity *= 5f;
+				dustIndex2 = Dust.NewDust(new Vector2(projectile.position.X, projectile.position.Y), projectile.width, projectile.height, 6, 0f, 0f, 100, default(Color), 2f);
+				Dust obj3 = Main.dust[dustIndex2];
+				obj3.velocity *= 3f;
+			}
 		}
-		for (int j = 0; j < 10; j++)
-		{
-			int dustIndex2 = Dust.NewDust(new Vector2(projectile.position.X, projectile.position.Y), projectile.width, projectile.height, 6, 0f, 0f, 100, default(Color), 3f);
-			Main.dust[dustIndex2].noGravity = true;
-			Dust obj2 = Main.dust[dustIndex2];
-			obj2.velocity *= 5f;
-			dustIndex2 = Dust.NewDust(new Vector2(projectile.position.X, projectile.position.Y), projectile.width, projectile.height, 6, 0f, 0f, 100, default(Color), 2f);
-			Dust obj3 = Main.dust[dustIndex2];
-			obj3.velocity *= 3f;
-		}
-	}
 	}
 }

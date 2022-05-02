@@ -51,8 +51,6 @@ namespace TheConfectionRebirth.NPCs.Critters
 		 return 0;
         }
 
-        //Might add gore later
-
 		public override void OnCatchNPC(Player player, Item item) {
 			item.stack = 1;
 

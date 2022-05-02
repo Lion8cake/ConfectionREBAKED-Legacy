@@ -41,14 +41,14 @@ namespace TheConfectionRebirth.NPCs
 		
 		public override void HitEffect(int hitDirection, double damage) {
 			if (npc.life <= 0)
-		{
-			Gore.NewGore(npc.position, npc.velocity, 13);
-			Gore.NewGore(npc.position, npc.velocity, 12);
-			Gore.NewGore(npc.position, npc.velocity, 11);
-		}
+			{
+				Gore.NewGore(npc.position, npc.velocity, 13);
+				Gore.NewGore(npc.position, npc.velocity, 12);
+				Gore.NewGore(npc.position, npc.velocity, 11);
+			}
 		}
 		
-	int speed = 10;
+		int speed = 10;
         int maxFrames = 3;
         int frame;
         public override void FindFrame(int frameHeight)
@@ -73,5 +73,5 @@ namespace TheConfectionRebirth.NPCs
 		   return spawnInfo.player.ZoneRockLayerHeight && spawnInfo.player.GetModPlayer<ConfectionPlayer>().ZoneConfection && spawnInfo.player.ZoneSnow ? .2f : 0f;
 		 return 0;
         }
-  }	
+	}	
 }

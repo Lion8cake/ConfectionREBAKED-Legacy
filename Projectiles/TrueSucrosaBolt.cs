@@ -21,6 +21,7 @@ namespace TheConfectionRebirth.Projectiles
 			projectile.alpha = 0;
 			projectile.friendly = true;
         }
+		
 		public override Color? GetAlpha(Color lightColor)
 		{
 			if (this.projectile.localAI[1] >= 15f)
@@ -34,6 +35,7 @@ namespace TheConfectionRebirth.Projectiles
 			int num7 = (int)((this.projectile.localAI[1] - 5f) / 10f * 255f);
 			return new Color(num7, num7, num7, num7);
 		}
+		
 		public override void AI()
         {
 			if (projectile.localAI[1] > 5f)
@@ -56,6 +58,7 @@ namespace TheConfectionRebirth.Projectiles
 				dust.velocity *= 0.1f;
 			}
 		}
+		
         public override void Kill(int timeLeft)
         {
 			Main.PlaySound(2, (int)projectile.position.X, (int)projectile.position.Y, 10);

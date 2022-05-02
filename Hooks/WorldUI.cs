@@ -1,4 +1,4 @@
-/*using Microsoft.Xna.Framework;
+/*using Microsoft.Xna.Framework; //Also doesn't work and taken from exxo avalon origins remake
 using Microsoft.Xna.Framework.Graphics;
 using Mono.Cecil.Cil;
 using MonoMod.Cil;

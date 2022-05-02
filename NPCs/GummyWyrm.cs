@@ -126,7 +126,6 @@ namespace TheConfectionRebirth.NPCs
 		}
     }
 
-    // I made this 2nd base class to limit code repetition.
     public abstract class ConfectionWorm : Worm
     {
         public override void SetStaticDefaults()
@@ -148,11 +147,6 @@ namespace TheConfectionRebirth.NPCs
 
 	public abstract class Worm : ModNPC
     {
-        /* ai[0] = follower
-		 * ai[1] = following
-		 * ai[2] = distanceFromTail
-		 * ai[3] = head
-		 */
         public bool head;
         public bool tail;
         public int minLength;

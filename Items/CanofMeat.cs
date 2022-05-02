@@ -7,7 +7,7 @@ namespace TheConfectionRebirth.Items
 	{
 		public override void SetStaticDefaults() 
 		{
-			DisplayName.SetDefault("Can of Meat"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
+			DisplayName.SetDefault("Can of Meat");
 			Tooltip.SetDefault("'Sometimes carried by creatures in the bloody desert'");
 		}
 

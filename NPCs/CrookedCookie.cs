@@ -43,5 +43,5 @@ namespace TheConfectionRebirth.NPCs
 		{
 			npc.rotation += npc.velocity.X * 0.05f;
 		}
-     }	
+	}	
 }

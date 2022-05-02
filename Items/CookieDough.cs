@@ -7,7 +7,7 @@ namespace TheConfectionRebirth.Items
 	{
 		public override void SetStaticDefaults() 
 		{
-			DisplayName.SetDefault("Cookie Dough"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
+			DisplayName.SetDefault("Cookie Dough");
 			Tooltip.SetDefault("Don't consume it, it may contain raw eggs.");
 		}
 

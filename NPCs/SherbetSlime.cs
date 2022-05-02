@@ -50,5 +50,5 @@ namespace TheConfectionRebirth.NPCs
 		   return spawnInfo.player.ZoneOverworldHeight && Main.raining && spawnInfo.player.GetModPlayer<ConfectionPlayer>().ZoneConfection ? .1f : 0f;// Mod Biome // if day time 
 		 return 0;
         }
-		}
 	}
+}

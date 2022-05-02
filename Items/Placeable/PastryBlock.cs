@@ -7,8 +7,9 @@ namespace TheConfectionRebirth.Items.Placeable
 {
 	public class PastryBlock : ModItem
 	{
-		public override void SetStaticDefaults() {
-		DisplayName.SetDefault("Pastry Block");
+		public override void SetStaticDefaults() 
+		{
+			DisplayName.SetDefault("Pastry Block");
 		}
 
 		public override void SetDefaults() {

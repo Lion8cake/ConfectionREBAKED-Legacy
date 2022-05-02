@@ -94,101 +94,101 @@ namespace TheConfectionRebirth.Tiles
 		}
 
 		public override bool NewRightClick(int i, int j) {
-		Player localPlayer = Main.LocalPlayer;
-		Tile tile = Main.tile[i, j];
-		Main.mouseRightRelease = false;
-		int num = i;
-		int num2 = j;
-		if (tile.frameX % 36 != 0)
-		{
-			num--;
-		}
-		if (tile.frameY != 0)
-		{
-			num2--;
-		}
-		if (localPlayer.sign >= 0)
-		{
-			Main.PlaySound(11);
-			localPlayer.sign = -1;
-			Main.editSign = false;
-			Main.npcChatText = "";
-		}
-		if (Main.editChest)
-		{
-			Main.PlaySound(12);
-			Main.editChest = false;
-			Main.npcChatText = "";
-		}
-		if (localPlayer.editedChestName)
-		{
-			NetMessage.SendData(33, -1, -1, NetworkText.FromLiteral(Main.chest[localPlayer.chest].name), localPlayer.chest, 1f);
-			localPlayer.editedChestName = false;
-		}
-		bool flag = IsLockedChest(num, num2);
-		if (Main.netMode == 1 && !flag)
-		{
-			if (num == localPlayer.chestX && num2 == localPlayer.chestY && localPlayer.chest >= 0)
+			Player localPlayer = Main.LocalPlayer;
+			Tile tile = Main.tile[i, j];
+			Main.mouseRightRelease = false;
+			int num = i;
+			int num2 = j;
+			if (tile.frameX % 36 != 0)
 			{
-				localPlayer.chest = -1;
-				Recipe.FindRecipes();
+				num--;
+			}
+			if (tile.frameY != 0)
+			{
+				num2--;
+			}
+			if (localPlayer.sign >= 0)
+			{
 				Main.PlaySound(11);
+				localPlayer.sign = -1;
+				Main.editSign = false;
+				Main.npcChatText = "";
 			}
-			else
+			if (Main.editChest)
 			{
-				NetMessage.SendData(31, -1, -1, null, num, num2);
-				Main.stackSplit = 600;
+				Main.PlaySound(12);
+				Main.editChest = false;
+				Main.npcChatText = "";
 			}
-		}
-		else if (flag)
-		{
-			int num3 = base.mod.ItemType("ConfectionBiomeKey");
-			for (int k = 0; k < 58; k++)
+			if (localPlayer.editedChestName)
 			{
-				if (localPlayer.inventory[k].type == num3 && localPlayer.inventory[k].stack > 0 && Chest.Unlock(num, num2))
-				{
-					localPlayer.inventory[k].stack--;
-					if (localPlayer.inventory[k].stack <= 0)
-					{
-						localPlayer.inventory[k].TurnToAir();
-					}
-					if (Main.netMode == 1)
-					{
-						NetMessage.SendData(52, -1, -1, null, localPlayer.whoAmI, 1f, num, num2);
-					}
-					break;
-				}
+				NetMessage.SendData(33, -1, -1, NetworkText.FromLiteral(Main.chest[localPlayer.chest].name), localPlayer.chest, 1f);
+				localPlayer.editedChestName = false;
 			}
-		}
-		else
-		{
-			int num4 = Chest.FindChest(num, num2);
-			if (num4 >= 0)
+			bool flag = IsLockedChest(num, num2);
+			if (Main.netMode == 1 && !flag)
 			{
-				Main.stackSplit = 600;
-				if (num4 == localPlayer.chest)
+				if (num == localPlayer.chestX && num2 == localPlayer.chestY && localPlayer.chest >= 0)
 				{
 					localPlayer.chest = -1;
+					Recipe.FindRecipes();
 					Main.PlaySound(11);
 				}
 				else
 				{
-					localPlayer.chest = num4;
-					Main.playerInventory = true;
-					if (PlayerInput.GrappleAndInteractAreShared)
-					{
-						PlayerInput.Triggers.JustPressed.Grapple = false;
-					}
-					Main.recBigList = false;
-					localPlayer.chestX = num;
-					localPlayer.chestY = num2;
-					Main.PlaySound((localPlayer.chest < 0) ? 10 : 12);
+					NetMessage.SendData(31, -1, -1, null, num, num2);
+					Main.stackSplit = 600;
 				}
-				Recipe.FindRecipes();
 			}
-		}
-		return true;
- 	}
+			else if (flag)
+			{
+				int num3 = base.mod.ItemType("ConfectionBiomeKey");
+				for (int k = 0; k < 58; k++)
+				{
+					if (localPlayer.inventory[k].type == num3 && localPlayer.inventory[k].stack > 0 && Chest.Unlock(num, num2))
+					{
+						localPlayer.inventory[k].stack--;
+						if (localPlayer.inventory[k].stack <= 0)
+						{
+							localPlayer.inventory[k].TurnToAir();
+						}
+						if (Main.netMode == 1)
+						{
+							NetMessage.SendData(52, -1, -1, null, localPlayer.whoAmI, 1f, num, num2);
+						}
+						break;
+					}
+				}
+			}
+			else
+			{
+				int num4 = Chest.FindChest(num, num2);
+				if (num4 >= 0)
+				{
+					Main.stackSplit = 600;
+					if (num4 == localPlayer.chest)
+					{
+						localPlayer.chest = -1;
+						Main.PlaySound(11);
+					}
+					else
+					{
+						localPlayer.chest = num4;
+						Main.playerInventory = true;
+						if (PlayerInput.GrappleAndInteractAreShared)
+						{
+							PlayerInput.Triggers.JustPressed.Grapple = false;
+						}
+						Main.recBigList = false;
+						localPlayer.chestX = num;
+						localPlayer.chestY = num2;
+						Main.PlaySound((localPlayer.chest < 0) ? 10 : 12);
+					}
+					Recipe.FindRecipes();
+				}
+			}
+			return true;
+	 	}
 
 		public override void MouseOver(int i, int j) {
 			Player player = Main.LocalPlayer;

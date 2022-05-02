@@ -5,10 +5,6 @@ namespace TheConfectionRebirth.Items.Placeable
 {
 	public class CreamwoodDresser : ModItem
 	{
-		public override void SetStaticDefaults()
-		{
-		}
-
 		public override void SetDefaults()
 		{
 			item.width = 26;

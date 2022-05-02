@@ -24,11 +24,9 @@ namespace TheConfectionRebirth.Items.Weapons
 			item.scale = 1f;
 			item.rare = ItemRarityID.Pink;
 			item.value = Item.sellPrice(silver: 460);
-
 			item.melee = true;
 			item.noMelee = true; 
 			item.noUseGraphic = true; 
-
 			item.UseSound = SoundID.Item1;
 			item.shoot = ModContent.ProjectileType<SpearofCavendesProj>();
 			item.shootSpeed = 10f;

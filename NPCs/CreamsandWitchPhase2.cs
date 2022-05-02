@@ -40,23 +40,23 @@ namespace TheConfectionRebirth.NPCs
 		
 		public override void HitEffect(int hitDirection, double damage) {
 			if (npc.life <= 0)
-		{
-			Gore.NewGore(npc.position, npc.velocity, 13);
-			Gore.NewGore(npc.position, npc.velocity, 12);
-			Gore.NewGore(npc.position, npc.velocity, 11);
-		}
+			{
+				Gore.NewGore(npc.position, npc.velocity, 13);
+				Gore.NewGore(npc.position, npc.velocity, 12);
+				Gore.NewGore(npc.position, npc.velocity, 11);
+			}
 		}
 		
 		public override void AI()
-	{
-		npc.ai[0] += 1f;
-		if (Main.rand.NextBool(500) && NPC.CountNPCS(ModContent.NPCType<Hunger>()) < 25)
 		{
-			npc.ai[0] = 0f;
-			int i = NPC.NewNPC((int)npc.Center.X, (int)npc.Center.Y, ModContent.NPCType<Hunger>(), 0, npc.whoAmI);
-			Main.npc[i].velocity.X = Main.rand.NextFloat(-0.4f, 0.4f);
-			Main.npc[i].velocity.Y = Main.rand.NextFloat(-0.5f, -0.05f);
+			npc.ai[0] += 1f;
+			if (Main.rand.NextBool(500) && NPC.CountNPCS(ModContent.NPCType<Hunger>()) < 25)
+			{
+				npc.ai[0] = 0f;
+				int i = NPC.NewNPC((int)npc.Center.X, (int)npc.Center.Y, ModContent.NPCType<Hunger>(), 0, npc.whoAmI);
+				Main.npc[i].velocity.X = Main.rand.NextFloat(-0.4f, 0.4f);
+				Main.npc[i].velocity.Y = Main.rand.NextFloat(-0.5f, -0.05f);
+			}
 		}
-	}
 	}
 }

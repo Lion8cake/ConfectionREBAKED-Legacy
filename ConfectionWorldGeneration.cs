@@ -135,7 +135,7 @@ namespace TheConfectionRebirth
                 }
             }
             confectionorHallow = true;
-			//Main.NewText("The Ancient tastes of Sweet and Spice have also been released."); //Ill add this once I create the Sensation, you got to have to wait a bit :)
+			//Main.NewText("The Ancient tastes of Sweet and Spice have also been released."); //Ill add this once I create the Sensation, you got to have to wait a bit :) //This will never happen btw <<<
             AchievementsHelper.NotifyProgressionEvent(9);
             if (Main.netMode == NetmodeID.Server)
                 Netplay.ResetSections();

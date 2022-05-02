@@ -36,41 +36,41 @@ namespace TheConfectionRebirth.Projectiles
 		}
 		
 		public override void Kill(int timeLeft)
-	{
-		if (Main.myPlayer != projectile.owner)
 		{
-			return;
-		}
-		int choice = Main.rand.Next(1);
-		if (choice == 0)
-		{
-			Projectile.NewProjectile(projectile.Center.X, projectile.Center.Y, -8 + Main.rand.Next(0, 17), -8 + Main.rand.Next(0, 17), ModContent.ProjectileType<ChocolateChip>(), 24, 1f, Main.myPlayer, 0f, 0f);
-		}
-		
-		int num = Main.rand.Next(1);
-		if (num == 0)
-		{
-			Projectile.NewProjectile(projectile.Center.X, projectile.Center.Y, -8 + Main.rand.Next(0, 17), -8 + Main.rand.Next(0, 17), ModContent.ProjectileType<ChocolateChip>(), 24, 1f, Main.myPlayer, 0f, 0f);
-		}
-		
-		int num2 = Main.rand.Next(1);
-		if (num2 == 0)
-		{
-			Projectile.NewProjectile(projectile.Center.X, projectile.Center.Y, -8 + Main.rand.Next(0, 17), -8 + Main.rand.Next(0, 17), ModContent.ProjectileType<ChocolateChip>(), 24, 1f, Main.myPlayer, 0f, 0f);
-		}
-		{
-			int num3 = Main.rand.Next(1);
-			if (num3 == 0)
+			if (Main.myPlayer != projectile.owner)
+			{
+				return;
+			}
+			int choice = Main.rand.Next(1);
+			if (choice == 0)
 			{
 				Projectile.NewProjectile(projectile.Center.X, projectile.Center.Y, -8 + Main.rand.Next(0, 17), -8 + Main.rand.Next(0, 17), ModContent.ProjectileType<ChocolateChip>(), 24, 1f, Main.myPlayer, 0f, 0f);
 			}
 			
-			int num4 = Main.rand.Next(1);
-			if (num4 == 0)
+			int num = Main.rand.Next(1);
+			if (num == 0)
 			{
 				Projectile.NewProjectile(projectile.Center.X, projectile.Center.Y, -8 + Main.rand.Next(0, 17), -8 + Main.rand.Next(0, 17), ModContent.ProjectileType<ChocolateChip>(), 24, 1f, Main.myPlayer, 0f, 0f);
 			}
+			
+			int num2 = Main.rand.Next(1);
+			if (num2 == 0)
+			{
+				Projectile.NewProjectile(projectile.Center.X, projectile.Center.Y, -8 + Main.rand.Next(0, 17), -8 + Main.rand.Next(0, 17), ModContent.ProjectileType<ChocolateChip>(), 24, 1f, Main.myPlayer, 0f, 0f);
+			}
+			{
+				int num3 = Main.rand.Next(1);
+				if (num3 == 0)
+				{
+					Projectile.NewProjectile(projectile.Center.X, projectile.Center.Y, -8 + Main.rand.Next(0, 17), -8 + Main.rand.Next(0, 17), ModContent.ProjectileType<ChocolateChip>(), 24, 1f, Main.myPlayer, 0f, 0f);
+				}
+				
+				int num4 = Main.rand.Next(1);
+				if (num4 == 0)
+				{
+					Projectile.NewProjectile(projectile.Center.X, projectile.Center.Y, -8 + Main.rand.Next(0, 17), -8 + Main.rand.Next(0, 17), ModContent.ProjectileType<ChocolateChip>(), 24, 1f, Main.myPlayer, 0f, 0f);
+				}
+			}
 		}
-	}
 	}
 }

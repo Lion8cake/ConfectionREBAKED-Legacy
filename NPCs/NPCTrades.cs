@@ -12,10 +12,7 @@ namespace TheConfectionRebirth.NPCs
 	public class NPCTrades : GlobalNPC
 	{
 	
-	//NPCLoader.blockLoot.Add(ItemID.VanillaItem);
-	//that might work idk
-	
-	public override void SetupShop(int type, Chest shop, ref int nextSlot) {
+		public override void SetupShop(int type, Chest shop, ref int nextSlot) {
 			if (type == NPCID.Dryad && Main.hardMode && ConfectionWorldGeneration.confectionorHallow) {
 				shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.Placeable.CreamBeans>());
 				shop.item[nextSlot].shopCustomPrice = 2000;

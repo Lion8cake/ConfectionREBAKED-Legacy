@@ -8,7 +8,6 @@ namespace TheConfectionRebirth.Items.Armor
 	public class Knickercobbler : ModItem
 	{
 		public override void SetStaticDefaults() {
-			base.SetStaticDefaults();
 			DisplayName.SetDefault("Knickercobbler");
 		    Tooltip.SetDefault("'Great for impersonating Confection Creators'");
 		}

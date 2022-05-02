@@ -9,8 +9,8 @@ using Terraria.Utilities;
 
 namespace TheConfectionRebirth.Tiles
 {
-public class ConfectionGlobalTile : GlobalTile
-{
-	public static IList<ModWaterStyle> WaterStyles => (IList<ModWaterStyle>)typeof(WaterStyleLoader).GetField("waterStyles", BindingFlags.Static | BindingFlags.NonPublic).GetValue(null);
-}
+	public class ConfectionGlobalTile : GlobalTile
+	{
+		public static IList<ModWaterStyle> WaterStyles => (IList<ModWaterStyle>)typeof(WaterStyleLoader).GetField("waterStyles", BindingFlags.Static | BindingFlags.NonPublic).GetValue(null);
+	}
 }

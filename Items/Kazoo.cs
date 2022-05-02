@@ -1,7 +1,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace TheConfectionRebirth.Items.Weapons
+namespace TheConfectionRebirth.Items
 {
 	public class Kazoo : ModItem
 	{

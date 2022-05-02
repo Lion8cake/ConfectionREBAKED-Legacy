@@ -18,6 +18,7 @@ namespace TheConfectionRebirth.Items.Accessories
 			item.rare = ItemRarityID.Pink;
 			item.accessory = true;
 		}
+		
 		public override void UpdateAccessory(Player player, bool hideVisual) {
 			player.wingTimeMax = 67;
 		}

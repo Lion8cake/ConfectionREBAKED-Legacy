@@ -112,10 +112,10 @@ namespace TheConfectionRebirth.Projectiles
 							Main.tile[k, l].type = TileID.Sand;
 							WorldGen.SquareTileFrame(k, l, true);
 							NetMessage.SendTileSquare(-1, k, l, 1);
-						}
-						
+						}	
+					}
 				}
 			}
 		}
 	}
-}}
+}

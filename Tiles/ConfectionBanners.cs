@@ -144,70 +144,70 @@ namespace TheConfectionRebirth.Tiles
 					case 5:
 						type = "Hunger";
 						break;
-				case 6:
-					type = "SweetGummy";
-					break;
-				case 7:
-					type = "CrazyCone";
-					break;
-				case 8:
-					type = "MeetyMummy";
-					break;
-				case 9:
-					type = "MintJr";
-					break;
-				case 10:
-					type = "Birdnana";
-					break;
-				case 11:
-					type = "ChocolateBunny";
-					break;
-				case 12:
-					type = "ChocolateFrog";
-					break;
-				case 13:
-					type = "Pip";
-					break;
-				case 14:
-					type = "CherryBug";
-					break;
-				case 15:
-					type = "StripedPigron";
-					break;
-				case 16:
-				    type = "FoaminFloat";
-					break;
-				case 17:
-				    type = "CrookedCookie";
-					break;
-				case 18:
-				    type = "Iscreamer";
-					break;
-				case 19:
-				    type = "CreamsandWitchPhase2";
-					break;
-				case 20:
-				    type = "TheUnfirm";
-					break;
-				case 21:
-				    type = "GummyWyrm";
-					break;
-				case 22:
-				    type = "CreamSwollower";
-					break;
-				case 23:
-				    type = "IcecreamGal";
-					break;
-				case 24:
-				    type = "Meowzer";
-					break;
-				case 25:
-				    type = "Dudley";
-					break;
-				case 26:
-				    type = "Prickster";
-					break;
-					default:
+					case 6:
+						type = "SweetGummy";
+						break;
+					case 7:
+						type = "CrazyCone";
+						break;
+					case 8:
+						type = "MeetyMummy";
+						break;
+					case 9:
+						type = "MintJr";
+						break;
+					case 10:
+						type = "Birdnana";
+						break;
+					case 11:
+						type = "ChocolateBunny";
+						break;
+					case 12:
+						type = "ChocolateFrog";
+						break;
+					case 13:
+						type = "Pip";
+						break;
+					case 14:
+						type = "CherryBug";
+						break;
+					case 15:
+						type = "StripedPigron";
+						break;
+					case 16:
+					    type = "FoaminFloat";
+						break;
+					case 17:
+					    type = "CrookedCookie";
+						break;
+					case 18:
+					    type = "Iscreamer";
+						break;
+					case 19:
+					    type = "CreamsandWitchPhase2";
+						break;
+					case 20:
+					    type = "TheUnfirm";
+						break;
+					case 21:
+					    type = "GummyWyrm";
+						break;
+					case 22:
+					    type = "CreamSwollower";
+						break;
+					case 23:
+					    type = "IcecreamGal";
+						break;
+					case 24:
+					    type = "Meowzer";
+						break;
+					case 25:
+					    type = "Dudley";
+						break;
+					case 26:
+					    type = "Prickster";
+						break;
+						default:
 						return;
 				}
 				player.NPCBannerBuff[mod.NPCType(type)] = true;

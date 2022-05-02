@@ -53,34 +53,34 @@ namespace TheConfectionRebirth.Items.Weapons
 
 		public override bool CanUseItem(Player player) {
 			if (player.altFunctionUse == 2) {
-				item.noMelee = true;
+			item.noMelee = true;
 			item.useStyle = ItemUseStyleID.HoldingOut;
 			item.useAnimation = 40;
 			item.useTime = 40;
 			item.knockBack = 4f;
-				item.damage = 38;
-				item.noUseGraphic = true;
-				item.shoot = ModContent.ProjectileType<CreamofKickinCookie>();
-				item.shootSpeed = 15.1f;
-			    item.UseSound = SoundID.Item1;
-			    item.melee = true;
-			    item.crit = 15;
-			    item.channel = true;
+			item.damage = 38;
+			item.noUseGraphic = true;
+			item.shoot = ModContent.ProjectileType<CreamofKickinCookie>();
+			item.shootSpeed = 15.1f;
+		    item.UseSound = SoundID.Item1;
+		    item.melee = true;
+		    item.crit = 15;
+		    item.channel = true;
 			}
 			else {
-				item.noMelee = true;
+			item.noMelee = true;
 			item.useStyle = ItemUseStyleID.HoldingOut;
 			item.useAnimation = 40;
 			item.useTime = 40;
 			item.knockBack = 4f;
-				item.damage = 45;
-				item.noUseGraphic = true;
-				item.shoot = ModContent.ProjectileType<CreamofKickinMeatball>();
-				item.shootSpeed = 15.1f;
-			    item.UseSound = SoundID.Item1;
-			    item.melee = true;
-			    item.crit = 15;
-			    item.channel = true;
+			item.damage = 45;
+			item.noUseGraphic = true;
+			item.shoot = ModContent.ProjectileType<CreamofKickinMeatball>();
+			item.shootSpeed = 15.1f;
+		    item.UseSound = SoundID.Item1;
+		    item.melee = true;
+		    item.crit = 15;
+		    item.channel = true;
 			}
 			return base.CanUseItem(player);
 		}

@@ -7,9 +7,6 @@ namespace TheConfectionRebirth.Items.Armor
 	[AutoloadEquip(EquipType.Legs)]
 	public class WonkyTrousers : ModItem
 	{
-		public override void SetStaticDefaults() {
-		}
-
 		public override void SetDefaults() {
 			item.width = 18;
 			item.height = 18;

@@ -8,10 +8,7 @@ namespace TheConfectionRebirth.Items.Placeable
 {
 	public class HallowedBrick : ModItem
 	{
-		public override void SetStaticDefaults() {
-		}
-
-		public override void SetDefaults() {
+		public override void SetDefaults() { 
 			item.width = 12;
 			item.height = 12;
 			item.maxStack = 999;

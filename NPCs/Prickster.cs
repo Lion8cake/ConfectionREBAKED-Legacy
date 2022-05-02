@@ -7,13 +7,6 @@ using System;
 using TheConfectionRebirth.Items.Banners;
 using TheConfectionRebirth.Dusts;
 
-/*
- * TODO:
- * add sprites so changes sprites when in air spinning
- * make it so the npc can spawn on walls and in a 3x2 or 2x3 area
- * 
- */
-
 namespace TheConfectionRebirth.NPCs 
 {
 	public class Prickster : ModNPC

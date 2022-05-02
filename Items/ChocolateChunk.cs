@@ -7,8 +7,6 @@ namespace TheConfectionRebirth.Items
 	public class ChocolateChunk : ModItem
 	{
 		public override void SetStaticDefaults() {
-			// DisplayName and Tooltip are automatically set from the .lang files, but below is how it is done normally.
-			// DisplayName.SetDefault("Paper Airplane");
 			Tooltip.SetDefault("Spawns a little Rollercookie to roll around with you!");
 		}
 

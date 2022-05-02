@@ -14,9 +14,10 @@ using TheConfectionRebirth.Gores;
 namespace TheConfectionRebirth.NPCs
 {
 	
-	    public class Sprinkler : ModNPC
+	public class Sprinkler : ModNPC
     {
-	private Player player;
+	
+		private Player player;
 		
 		public override void SetStaticDefaults() {
 			DisplayName.SetDefault("Sprinkler");
@@ -32,16 +33,16 @@ namespace TheConfectionRebirth.NPCs
 			npc.HitSound = SoundID.NPCHit5;
 			npc.DeathSound = SoundID.NPCDeath7;
 			npc.noGravity = false;
-			npc.knockBackResist = 1f;
+			npc.knockBackResist = 0f;
 			npc.aiStyle = 0;
 			aiType = 0;
 			animationType = NPCID.BlueSlime;
 		}
 		
 		public override void ScaleExpertStats(int numPlayers, float bossLifeScale)
-	{
-		npc.damage = (int)((float)npc.damage * 0.2f);
-	}
+		{
+			npc.damage = (int)((float)npc.damage * 0.2f);
+		}
 		
 		public override void HitEffect(int hitDirection, double damage) {
 			if (npc.life <= 0) {
@@ -58,37 +59,36 @@ namespace TheConfectionRebirth.NPCs
         }
 		
 		public override void AI()
-	{
-		Target();
-		npc.ai[1] -= 1f;
-		if (npc.ai[1] <= 0f)
 		{
-			Shoot();
+			Target();
+			npc.ai[1] -= 1f;
+			if (npc.ai[1] <= 0f)
+			{
+				Shoot();
+			}
 		}
-	}
-	
-	private void Target()
-	{
-		player = Main.player[npc.target];
-	}
 		
+		private void Target()
+		{
+			player = Main.player[npc.target];
+		}
+			
 		private void Shoot()
-	{
-		int type = mod.ProjectileType("SprinklingBall");
-		Vector2 velocity = player.Center - npc.Center;
-		float magnitude = Magnitude(velocity);
-		if (magnitude > 0f)
-	    	{
-			velocity *= 5f / magnitude;
-		    }
-		Projectile.NewProjectile(npc.Center, velocity, type, npc.damage, 2f);
-		npc.ai[1] = 200f;
-	}
-	
-	private float Magnitude(Vector2 mag)
-	{
-		return (float)Math.Sqrt(mag.X * mag.X + mag.Y * mag.Y);
-	}
-	
+		{
+			int type = mod.ProjectileType("SprinklingBall");
+			Vector2 velocity = player.Center - npc.Center;
+			float magnitude = Magnitude(velocity);
+			if (magnitude > 0f)
+		    	{
+				velocity *= 5f / magnitude;
+			    }
+			Projectile.NewProjectile(npc.Center, velocity, type, npc.damage, 2f);
+			npc.ai[1] = 200f;
+		}
+		
+		private float Magnitude(Vector2 mag)
+		{
+			return (float)Math.Sqrt(mag.X * mag.X + mag.Y * mag.Y);
+		}
 	}
 }

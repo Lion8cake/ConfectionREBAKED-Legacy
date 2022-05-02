@@ -9,7 +9,6 @@ namespace TheConfectionRebirth.Items.Armor
 	public class NeapoliniteConeMail : ModItem
 	{
 		public override void SetStaticDefaults() {
-			base.SetStaticDefaults();
 			DisplayName.SetDefault("Neapolinite Cone Mail");
 			Tooltip.SetDefault("5% Increased Critical Strike Chance");
 		}
@@ -29,7 +28,7 @@ namespace TheConfectionRebirth.Items.Armor
 			player.thrownCrit += 5;
 		}
 
-         public override void AddRecipes() 
+        public override void AddRecipes() 
 		{
 			ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ModContent.ItemType<Items.Placeable.NeapoliniteBar>(), 24);

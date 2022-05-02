@@ -7,7 +7,7 @@ namespace TheConfectionRebirth.Items
 	{
 		public override void SetStaticDefaults() 
 		{
-			DisplayName.SetDefault("Cream Puff"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
+			DisplayName.SetDefault("Cream Puff"); 
 			Tooltip.SetDefault("'Sometimes carried by creatures in the dessert desert'");
 		}
 

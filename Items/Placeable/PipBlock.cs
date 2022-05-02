@@ -7,8 +7,9 @@ namespace TheConfectionRebirth.Items.Placeable
 {
 	public class PipBlock : ModItem
 	{
-		public override void SetStaticDefaults() {
-		DisplayName.SetDefault("Pip Block");
+		public override void SetStaticDefaults() 
+		{
+			DisplayName.SetDefault("Pip Block");
 		}
 
 		public override void SetDefaults() {

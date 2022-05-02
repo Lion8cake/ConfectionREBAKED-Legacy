@@ -4,17 +4,17 @@ using Terraria.ModLoader;
 
 namespace TheConfectionRebirth.Buffs
 {
-public class RollerCookieSummonBuff : ModBuff
-{
-	public override void SetDefaults()
+	public class RollerCookieSummonBuff : ModBuff
 	{
-		DisplayName.SetDefault("Miniture Roller Cookie");
-		Description.SetDefault("The Miniture Cookies will roll after your enemies.");
-		Main.buffNoTimeDisplay[Type] = true;
-		Main.buffNoSave[Type] = true;
-	}
-
-	public override void Update(Player player, ref int buffIndex) {
+		public override void SetDefaults()
+		{
+			DisplayName.SetDefault("Miniture Roller Cookie");
+			Description.SetDefault("The Miniture Cookies will roll after your enemies.");
+			Main.buffNoTimeDisplay[Type] = true;
+			Main.buffNoSave[Type] = true;
+		}
+	
+		public override void Update(Player player, ref int buffIndex) {
 			ConfectionPlayer modPlayer = player.GetModPlayer<ConfectionPlayer>();
 			if (player.ownedProjectileCounts[ModContent.ProjectileType<Projectiles.Summons.RollerCookieSummonProj>()] > 0) {
 				modPlayer.minitureCookie = true;
@@ -27,5 +27,5 @@ public class RollerCookieSummonBuff : ModBuff
 				player.buffTime[buffIndex] = 18000;
 			}
 		}
-}
+	}
 }

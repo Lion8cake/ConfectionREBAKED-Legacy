@@ -32,7 +32,7 @@ namespace TheConfectionRebirth.Items.Weapons
 			item.shootSpeed = 7.5f;
 		}
 		
-		    public override Vector2? HoldoutOffset()
+		public override Vector2? HoldoutOffset()
 	    {
 		    return new Vector2(-4f, 4f);
 	    }

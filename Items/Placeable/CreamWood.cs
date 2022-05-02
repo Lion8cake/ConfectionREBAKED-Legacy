@@ -7,8 +7,9 @@ namespace TheConfectionRebirth.Items.Placeable
 {
 	public class CreamWood : ModItem
 	{
-		public override void SetStaticDefaults() {
-		DisplayName.SetDefault("Creamwood");
+		public override void SetStaticDefaults() 
+		{
+			DisplayName.SetDefault("Creamwood");
 		}
 
 		public override void SetDefaults() {

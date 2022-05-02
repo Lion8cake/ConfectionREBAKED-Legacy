@@ -38,7 +38,7 @@ namespace TheConfectionRebirth.Tiles
 		
         public override void RandomUpdate(int i, int j)
         {
-          ConfectionWorld.InfectionSpread(i, j, "Confection");
+			ConfectionWorld.InfectionSpread(i, j, "Confection");
 		    
 	   	    Tile tile = Framing.GetTileSafely(i, j);
 	    	Tile tileBelow = Framing.GetTileSafely(i, j + 1);
@@ -126,6 +126,5 @@ namespace TheConfectionRebirth.Tiles
             style = 0;
             return mod.TileType("CreamSapling"); 
         }
-
     }
 }

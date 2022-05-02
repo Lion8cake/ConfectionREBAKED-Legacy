@@ -7,8 +7,9 @@ namespace TheConfectionRebirth.Items.Placeable
 {
 	public class SacchariteBrick : ModItem
 	{
-		public override void SetStaticDefaults() {
-		DisplayName.SetDefault("Saccharite Block");
+		public override void SetStaticDefaults() 
+		{
+			DisplayName.SetDefault("Saccharite Block");
 		}
 
 		public override void SetDefaults() {

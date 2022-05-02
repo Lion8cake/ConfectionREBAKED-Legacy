@@ -1,4 +1,4 @@
-using TheConfectionRebirth.Tiles;
+using TheConfectionRebirth.Tiles; //Code taken from exxo avalon origins 1.3 remake
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;

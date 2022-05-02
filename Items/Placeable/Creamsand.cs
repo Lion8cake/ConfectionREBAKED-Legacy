@@ -20,7 +20,6 @@ namespace TheConfectionRebirth.Items.Placeable
 			item.useStyle = ItemUseStyleID.SwingThrow;
 			item.consumable = true;
 			item.createTile = ModContent.TileType<Tiles.Creamsand>();
-			//item.ammo = AmmoID.Sand; //Using this Sand in the Sandgun would require PickAmmo code and changes to ExampleSandProjectile or a new ModProjectile.
 		}
 	}
 }

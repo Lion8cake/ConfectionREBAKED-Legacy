@@ -31,9 +31,9 @@ namespace TheConfectionRebirth.Tiles
 			minPick = 65;
 		}
 		
-	public override void RandomUpdate(int i, int j)
-	{
-	ConfectionWorld.InfectionSpread(i, j, "Confection");
+		public override void RandomUpdate(int i, int j)
+		{
+			ConfectionWorld.InfectionSpread(i, j, "Confection");
 	    }
 
 		public override void NumDust(int i, int j, bool fail, ref int num) {

@@ -6,9 +6,6 @@ namespace TheConfectionRebirth.Items.Placeable
 {
 	public class CreamwoodBed : ModItem
 	{
-		public override void SetStaticDefaults() {
-		}
-
 		public override void SetDefaults() {
 			item.width = 28;
 			item.height = 20;

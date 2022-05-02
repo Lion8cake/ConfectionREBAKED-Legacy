@@ -5,9 +5,6 @@ namespace TheConfectionRebirth.Items.Placeable
 {
 	public class CreamwoodFence : ModItem
 	{
-		public override void SetStaticDefaults() {
-		}
-
 		public override void SetDefaults() {
 			item.width = 12;
 			item.height = 12;

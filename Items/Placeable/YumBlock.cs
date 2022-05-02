@@ -7,8 +7,9 @@ namespace TheConfectionRebirth.Items.Placeable
 {
 	public class YumBlock : ModItem
 	{
-		public override void SetStaticDefaults() {
-		DisplayName.SetDefault("Yum Block");
+		public override void SetStaticDefaults() 
+		{
+			DisplayName.SetDefault("Yum Block");
 		}
 
 		public override void SetDefaults() {

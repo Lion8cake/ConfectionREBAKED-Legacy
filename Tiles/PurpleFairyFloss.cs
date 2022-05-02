@@ -33,15 +33,15 @@ namespace TheConfectionRebirth.Tiles
         }
 		
 		public override void NearbyEffects(int i, int j, bool closer)
-	{
-		if (!Main.gamePaused && closer && Main.rand.NextBool(1))
 		{
-			int tileLocationY = j + 1;
-			if (Main.tile[i, tileLocationY] != null && !Main.tile[i, tileLocationY].active() && Main.netMode != 1)
+			if (!Main.gamePaused && closer && Main.rand.NextBool(1))
 			{
-				Projectile.NewProjectile(i * 16 + 8, tileLocationY * 16 + 0, 0f, 0.1f, ModContent.ProjectileType<ChocolateRain>(), 25, 2f, Main.myPlayer);
+				int tileLocationY = j + 1;
+				if (Main.tile[i, tileLocationY] != null && !Main.tile[i, tileLocationY].active() && Main.netMode != 1)
+				{
+					Projectile.NewProjectile(i * 16 + 8, tileLocationY * 16 + 0, 0f, 0.1f, ModContent.ProjectileType<ChocolateRain>(), 25, 2f, Main.myPlayer);
+				}
 			}
 		}
-	}
     }
 }

@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 
 namespace TheConfectionRebirth.Gores
 {
-	public class ExampleTreeFX : ModGore
+	public class CreamTreeFX : ModGore
 	{
 		public override void OnSpawn(Gore gore) {
 			gore.velocity = new Vector2(Main.rand.NextFloat() - 0.5f, Main.rand.NextFloat() * MathHelper.TwoPi);

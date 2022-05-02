@@ -105,7 +105,6 @@ namespace TheConfectionRebirth.NPCs
         }
     }
 
-    // I made this 2nd base class to limit code repetition.
     public abstract class ConfectionWormMini : Worm
     {
         public override void SetStaticDefaults()

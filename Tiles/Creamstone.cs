@@ -40,7 +40,7 @@ namespace TheConfectionRebirth.Tiles
 	{
           ConfectionWorld.InfectionSpread(i, j, "Confection");
 	
-	    Tile tile = Framing.GetTileSafely(i, j);
+	   		Tile tile = Framing.GetTileSafely(i, j);
 	    	Tile tileBelow = Framing.GetTileSafely(i, j + 1);
     		Tile tileAbove = Framing.GetTileSafely(i, j - 1);
 	    	if (WorldGen.genRand.NextBool(45) && !tileBelow.active() && !tileBelow.lava() && !tile.bottomSlope())

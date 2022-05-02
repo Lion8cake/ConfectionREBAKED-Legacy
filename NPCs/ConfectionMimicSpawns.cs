@@ -5,12 +5,10 @@ using Terraria.ModLoader;
 
 namespace TheConfectionRebirth.NPCs
 {
-	// Example Soul of Light/Soul of Night style NPC summon
 	public class ConfectionMimicSpawning : ModPlayer
 	{
 		public int LastChest;
 
-		// This doesn't make sense, but this is around where this check happens in Vanilla Terraria.
 		public override void PreUpdateBuffs() {
 			if (Main.netMode != NetmodeID.MultiplayerClient) {
 				if (player.chest == -1 && LastChest >= 0 && Main.chest[LastChest] != null) {
@@ -22,7 +20,6 @@ namespace TheConfectionRebirth.NPCs
 			}
 		}
 
-		// Allows mimic spawning in single player with autopause on
 		public override void UpdateAutopause() {
 			LastChest = player.chest;
 		}

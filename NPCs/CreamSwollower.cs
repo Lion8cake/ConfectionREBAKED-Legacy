@@ -46,5 +46,5 @@ namespace TheConfectionRebirth.NPCs
 		   return spawnInfo.player.ZoneSandstorm && spawnInfo.player.ZoneDesert && spawnInfo.player.GetModPlayer<ConfectionPlayer>().ZoneConfection ? .5f : 0f;
 		 return 0;
         }
-  }
+	}
 }

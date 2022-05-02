@@ -48,23 +48,18 @@ namespace TheConfectionRebirth.Tiles
 		public override void NumDust(int i, int j, bool fail, ref int num) => num = fail ? 1 : 3;
 
 		public override void RandomUpdate(int i, int j) {
-			// A random chance to slow down growth
 			if (WorldGen.genRand.Next(20) == 0)
 			{
-				Tile tile = Framing.GetTileSafely(i, j); // Safely get the tile at the given coordinates
-				bool growSucess; // A bool to see if the tree growing was sucessful.
+				Tile tile = Framing.GetTileSafely(i, j); 
+				bool growSucess; 
 
-				// Style 0 is for the ExampleTree sapling, and style 1 is for ExamplePalmTree, so here we check frameX to call the correct method.
-				// Any pixels before 54 on the tilesheet are for ExampleTree while any pixels above it are for ExamplePalmTree
 				if (tile.frameX < 54)
 					growSucess = WorldGen.GrowTree(i, j);
 				else
 					growSucess = WorldGen.GrowPalmTree(i, j);
 
-				// A flag to check if a player is near the sapling
 				bool isPlayerNear = WorldGen.PlayerLOS(i, j);
 
-				//If growing the tree was a sucess and the player is near, show growing effects
 				if (growSucess && isPlayerNear)
 					WorldGen.TreeGrowFXCheck(i, j);
 			}

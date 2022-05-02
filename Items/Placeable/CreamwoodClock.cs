@@ -5,9 +5,6 @@ namespace TheConfectionRebirth.Items.Placeable
 {
 	public class CreamwoodClock : ModItem
 	{
-		public override void SetStaticDefaults() {
-		}
-
 		public override void SetDefaults() {
 			item.width = 26;
 			item.height = 22;
@@ -21,6 +18,7 @@ namespace TheConfectionRebirth.Items.Placeable
 			item.value = 500;
 			item.createTile = ModContent.TileType<Tiles.CreamwoodClock>();
 		}
+		
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);

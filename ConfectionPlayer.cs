@@ -200,15 +200,6 @@ namespace TheConfectionRebirth
 			return null;
 		}
 		
-		public override void Hurt(bool pvp, bool quiet, double damage, int hitDirection, bool crit) { //Look im not good at mounts, in fact this is my first ever mount
-			if (player.mount._mountSpecificData is Mounts.CcretMount.CcretSpecificData balloons) {
-				if (balloons.count > 0) {
-					balloons.count--;
-					Main.PlaySound(SoundID.Item38, player.position);
-				}
-			}
-		}
-		
 		public override bool PreHurt(bool pvp, bool quiet, ref int damage, ref int hitDirection, ref bool crit, ref bool customDamage, ref bool playSound, ref bool genGore, ref PlayerDeathReason damageSource)
         {
 			if (damageSource.SourceCustomReason == "DimensionSplit")
@@ -587,7 +578,6 @@ namespace TheConfectionRebirth
 					layers.Insert(legsLayer + 1, NeapoliniteGreavesMaskDefault);
 				}
 			}
-
 		}
 	}
 }

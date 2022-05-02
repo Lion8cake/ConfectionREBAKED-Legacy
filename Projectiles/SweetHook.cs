@@ -73,7 +73,5 @@ namespace TheConfectionRebirth.Projectiles
             }
             return true;
         }
-
-
     }
 }

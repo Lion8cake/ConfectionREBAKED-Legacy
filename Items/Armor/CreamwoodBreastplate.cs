@@ -8,11 +8,6 @@ namespace TheConfectionRebirth.Items.Armor
 	[AutoloadEquip(EquipType.Body)]
 	public class CreamwoodBreastplate : ModItem
 	{
-		public override void SetStaticDefaults() {
-			base.SetStaticDefaults();
-			DisplayName.SetDefault("Creamwood Breastplate");
-		}
-
 		public override void SetDefaults() {
 			item.width = 18;
 			item.height = 18;

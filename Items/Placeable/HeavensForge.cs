@@ -9,14 +9,12 @@ namespace TheConfectionRebirth.Items.Placeable
     {
         public override void SetDefaults()
         {
-
             item.width = 50;
             item.height = 26;
             item.maxStack = 99;
             item.useTurn = true;
             item.autoReuse = true;
             item.useAnimation = 15;
-
             item.useTime = 10;
             item.useStyle = 1;
             item.consumable = true;

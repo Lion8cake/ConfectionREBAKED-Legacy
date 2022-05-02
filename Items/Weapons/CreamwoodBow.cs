@@ -6,9 +6,6 @@ namespace TheConfectionRebirth.Items.Weapons
 {
 	public class CreamwoodBow : ModItem
 	{
-		public override void SetStaticDefaults() {
-		}
-
 		public override void SetDefaults() {
 			item.damage = 9; 
 			item.ranged = true; 

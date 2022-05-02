@@ -7,8 +7,9 @@ namespace TheConfectionRebirth.Items.Placeable
 {
 	public class ShellBlock : ModItem
 	{
-		public override void SetStaticDefaults() {
-		DisplayName.SetDefault("Shell Block");
+		public override void SetStaticDefaults() 
+		{
+			DisplayName.SetDefault("Shell Block");
 		}
 
 		public override void SetDefaults() {

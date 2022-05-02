@@ -33,6 +33,7 @@ namespace TheConfectionRebirth.Items.Weapons
             item.shootSpeed = 10f;
             item.useAmmo = AmmoID.Arrow;
         }
+		
         public override void AddRecipes() 
 		{
 			ModRecipe recipe = new ModRecipe(mod);
@@ -41,6 +42,7 @@ namespace TheConfectionRebirth.Items.Weapons
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
+		
         public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
         {
              int numberProjectiles = 2 + Main.rand.Next(2); 
@@ -50,6 +52,6 @@ namespace TheConfectionRebirth.Items.Weapons
                     Projectile.NewProjectile(position.X, position.Y, perturbedSpeed.X, perturbedSpeed.Y, type, damage, knockBack, player.whoAmI);
                 }
                 return false;
-            }
         }
     }
+}
