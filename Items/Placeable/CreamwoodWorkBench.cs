@@ -3,7 +3,7 @@ using Terraria.ModLoader;
 
 namespace TheConfectionRebirth.Items.Placeable
 {
-	public class CreamwoodBench : ModItem
+	public class CreamwoodWorkBench : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
@@ -22,7 +22,7 @@ namespace TheConfectionRebirth.Items.Placeable
 			item.useStyle = 1;
 			item.consumable = true;
 			item.value = 0;
-			item.createTile = mod.TileType("CreamwoodBench");
+			item.createTile = mod.TileType("CreamwoodWorkBench");
 		}
 		
 		public override void AddRecipes() 

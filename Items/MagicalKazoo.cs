@@ -38,7 +38,7 @@ namespace TheConfectionRebirth.Items
 			recipe.AddIngredient(ModContent.ItemType<Items.Sprinkles>(), 80);
 			recipe.AddIngredient(ModContent.ItemType<Items.SoulofDelight>(), 12);
 			recipe.AddIngredient(ItemID.SoulofSight, 20);
-			recipe.AddIngredient(ModContent.ItemType<Items.Weapons.Kazoo>(), 1);
+			recipe.AddIngredient(ModContent.ItemType<Items.Kazoo>(), 1);
 			recipe.AddTile(TileID.MythrilAnvil);
 			recipe.SetResult(this);
 			recipe.AddRecipe();

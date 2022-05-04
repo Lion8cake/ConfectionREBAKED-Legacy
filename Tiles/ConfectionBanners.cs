@@ -108,10 +108,13 @@ namespace TheConfectionRebirth.Tiles
 				    item = "MeowzerBanner";
 					break;
 				case 25:
-				    item = "Dudley";
+				    item = "DudleyBanner";
 					break;
 				case 26:
-				    item = "Prickster";
+				    item = "PricksterBanner";
+					break;
+				case 27:
+				    item = "CherryBomberBanner";
 					break;
 				default:
 					return;
@@ -206,6 +209,9 @@ namespace TheConfectionRebirth.Tiles
 						break;
 					case 26:
 					    type = "Prickster";
+						break;
+					case 27:
+					    type = "CherryBomber";
 						break;
 						default:
 						return;

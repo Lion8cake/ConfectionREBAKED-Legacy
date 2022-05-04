@@ -7,7 +7,7 @@ namespace TheConfectionRebirth.Items.Weapons
 	public class SacchariteArrow : ModItem
 	{
 		public override void SetStaticDefaults() {
-			Tooltip.SetDefault("Shatters into pecies apon impact.");
+			Tooltip.SetDefault("Shatters apon impact.");
 		}
 
 		public override void SetDefaults() {

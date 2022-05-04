@@ -54,7 +54,6 @@ namespace TheConfectionRebirth.Tiles
 		public override void PostDraw(int i, int j, SpriteBatch spriteBatch) {
 			SpriteEffects effects = SpriteEffects.None;
 			if (i % 2 == 1) {
-				effects = SpriteEffects.FlipHorizontally;
 			}
 
 			Vector2 zero = new Vector2(Main.offScreenRange, Main.offScreenRange);

@@ -160,8 +160,22 @@ namespace TheConfectionRebirth
 			if (junk) {
 				return;
 			}
-			if (player.gravDir == -1f && questFish == ModContent.ItemType<CookieCutterShark>() && Main.rand.NextBool()) {
+			if (player.GetModPlayer<ConfectionPlayer>().ZoneConfection && questFish == ModContent.ItemType<CookieCutterShark>() && Main.rand.Next(10) == 0) 
+			{
 				caughtType = ModContent.ItemType<CookieCutterShark>();
+				return;
+			}
+			
+			if (player.GetModPlayer<ConfectionPlayer>().ZoneConfection && !Main.LocalPlayer.ZoneRockLayerHeight && questFish == ModContent.ItemType<Sprinklefish>() && Main.rand.Next(10) == 0) 
+			{
+				caughtType = ModContent.ItemType<Sprinklefish>();
+				return;
+			}
+			
+			if (player.GetModPlayer<ConfectionPlayer>().ZoneConfection && Main.LocalPlayer.ZoneRockLayerHeight && questFish == ModContent.ItemType<SacchariteBatFish>() && Main.rand.Next(10) == 0) 
+			{
+				caughtType = ModContent.ItemType<SacchariteBatFish>();
+				return;
 			}
 			
 			if (player.GetModPlayer<ConfectionPlayer>().ZoneConfection && liquidType == 0 && player.FindBuffIndex(BuffID.Crate) > -1 && Main.rand.Next(100) == 0)

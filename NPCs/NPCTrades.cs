@@ -29,7 +29,7 @@ namespace TheConfectionRebirth.NPCs
 				nextSlot++;
 			}
 			else if (type == NPCID.Wizard && ConfectionWorldGeneration.confectionorHallow) {
-				shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.Weapons.Kazoo>());
+				shop.item[nextSlot].SetDefaults(ModContent.ItemType<Items.Kazoo>());
 				shop.item[nextSlot].shopCustomPrice = 10000;
 				nextSlot++;
 			}
