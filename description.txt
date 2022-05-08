@@ -1,8 +1,8 @@
 ===========================================
 Confection REBAKED
 ===========================================
-Beta 0.17.4
-Seventeenth public version
+Beta 0.18
+Eightteenth public version
 
 WE NEED YOUR HELP
 We are in dire need of people that can program NPCs and custom AIs. If you can create custom AIs and can help out join our discord and message me 
@@ -16,42 +16,23 @@ You can join our discord at https://discord.gg/JwEKrVhjA6. If you have any suges
 ===========================================
 Change log
 ===========================================
-0.17.4
-Fixed bugged generation
-
-0.17.3 (0.18.1 because im stupid)
-Added Soda Pop as a part of a dare
-Removed April 1st Content
-
-0.17.2
-
-Added Confection Github. Link: https://github.com/Lion8cake/ConfectionREBAKED
-Added Fudge Chocolate Block
-Added Dryad World Confection Percentage
-Fixed a few things a long time ago that I forgor :skull:
-
-0.17.1
-
--Fixed pwnhammer not being able to be crated at heavenly forge
--Fixed Grand Slammer not being able to be crafted at heavenly forge
--Removed Mighty Wind debuff while in a confection sandstorm since the overlay effect does not play 
-
-0.17.0
-
--Added Drops to dudley and ice-screamer
--Added Ice version of the ice-screamer
--Added Animation to the projectile of the Dimentional Split
--Added Yum wall
--Changed Cherry Bombs to deal ranged damage instead of melee
--Changed The sound of the neapolinite repeater
--Changed Flight of the wild airy blue to be reduced by 25%
--Changed sprite of the cookie wheel
--Changed Sprite of the unfirm
--Changed rain colour in the confection to be the same as the water colour
--Changed name of the key of blood to the key of spite
--Fixed World creation UI not working
--Fixed Demon Altars spawning pearlstone instead of creamstone
--Removed key of decay 
+0.18
+Cleaned out the code a bit
+Added New map backgrounds
+Added Cherry bomber banner
+Added more recipes to the heavenly forge
+Added More quest fish
+Added Saccharite Dart
+Added Saccharite furniture
+Changed Fudged texture
+Changed file location for the kazoo
+Changed file name of the creamwood work bench
+Changed Saccharite Arrow description
+Changed texture of the creamwood tree saplings
+Changed texture of the creamwood palm tree leaves
+Changed how the flame texture is shown for creamwood chandiliers and candles
+Fixed Quest fish not being able to be caught 
+Removed old Creamstone Stalagmite code
 
 ===========================================
 Credits - Programers
@@ -68,6 +49,7 @@ Credits - Artists
 ===========================================
 SnickerBobble - Original concept creator of the Confection
 Delicios Satern - Music
+Snacks - Confection texturepack and multiple textures for the confection mod
 Dakotaspine - New background texture and new Crazy cone texture
 Mddznyan - Creating textures for some items and the new logo
 Neobind - Textures for a few things

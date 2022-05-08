@@ -1,6 +1,6 @@
 Welcome to the source code of Lion8cake's Confection mod
 
-If you compile this through tml it will work like the V17.4 Beta.
+If you compile this through tml it will work like the V18 Beta.
 
 We are almost complete with the confection! :)
 if you would like to help us finish the last few things join the discord at https://discord.gg/JwEKrVhjA6
