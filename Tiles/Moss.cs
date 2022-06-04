@@ -8,7 +8,7 @@ namespace TheConfectionRebirth.Tiles
 	public class CreamMoss : ModTile
 	{
 
-		public override string Texture => "TheConfectionRebirth/Tiles/Creamstone"
+		public override string Texture => "TheConfectionRebirth/Tiles/Creamstone";
 	
 
 		public override void SetDefaults()
