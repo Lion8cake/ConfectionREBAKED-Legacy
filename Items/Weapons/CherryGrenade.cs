@@ -1,4 +1,4 @@
-using TheConfectionRebirth.Projectiles;
+/*using TheConfectionRebirth.Projectiles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -43,4 +43,4 @@ namespace TheConfectionRebirth.Items.Weapons
 			recipe.AddRecipe();
 		}
 	}
-}
+}*/

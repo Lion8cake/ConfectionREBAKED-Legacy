@@ -1,38 +1,14 @@
 ===========================================
 Confection REBAKED
 ===========================================
-Beta 0.18
-Eightteenth public version
-
-WE NEED YOUR HELP
-We are in dire need of people that can program NPCs and custom AIs. If you can create custom AIs and can help out join our discord and message me 
--Lion8cake
 
 Welcome to the Confection 
 This mod was an unreleased mod back near the end of 2014 beginning of 2015 and was never released. A few attempts to remake it for TML were announced but never realeased. The Forum can be found here: https://forums.terraria.org/index.php?threads/sprites-the-confection-the-desserted-land-an-alternate-hallow.6352/
-You can join our discord at https://discord.gg/JwEKrVhjA6. If you have any sugestions contact me through discord Lion8cake #5160
-/!\ This is an almost complete version of the mod and some things are less likely to change may be subject to change. I advise you always make a backup of your world before using this mod. If you find any bugs please message me or report it in the discord so I can try to fix them./!\
--Lion8cake
-===========================================
-Change log
-===========================================
-0.18
-Cleaned out the code a bit
-Added New map backgrounds
-Added Cherry bomber banner
-Added more recipes to the heavenly forge
-Added More quest fish
-Added Saccharite Dart
-Added Saccharite furniture
-Changed Fudged texture
-Changed file location for the kazoo
-Changed file name of the creamwood work bench
-Changed Saccharite Arrow description
-Changed texture of the creamwood tree saplings
-Changed texture of the creamwood palm tree leaves
-Changed how the flame texture is shown for creamwood chandiliers and candles
-Fixed Quest fish not being able to be caught 
-Removed old Creamstone Stalagmite code
+You can join our discord at https://discord.gg/JwEKrVhjA6.
+
+This is the final version of the 1.3 Confection version. Future updates will be pushed to the 1.4 version
+
+As of release of this update it is confection rebaked's 1st birthday
 
 ===========================================
 Credits - Programers
@@ -53,14 +29,5 @@ Snacks - Confection texturepack and multiple textures for the confection mod
 Dakotaspine - New background texture and new Crazy cone texture
 Mddznyan - Creating textures for some items and the new logo
 Neobind - Textures for a few things
-
-===========================================
-1.4 Convertion credits
-===========================================
-Lion8cake - The person who spent most of his week converting stuff for 1.4
-UnboxingVideo - The new 1.4 tree code
-Basically, I am little Fox - help with converting some code, mostly world gen
-DireWolf420 - helped with a few errors I had 
-Mddznyan - few 1.4 textures, small icons, ect
 
 And to all the people that helped me out with coding problems and other issues, thank you!

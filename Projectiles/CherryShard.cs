@@ -1,4 +1,4 @@
-using Microsoft.Xna.Framework;
+/*using Microsoft.Xna.Framework;
 using TheConfectionRebirth;
 using TheConfectionRebirth.Projectiles;
 using Terraria;
@@ -57,4 +57,4 @@ namespace TheConfectionRebirth.Projectiles
 			}
 		}
 	}
-}
+}*/
