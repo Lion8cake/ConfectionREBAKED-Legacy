@@ -261,7 +261,7 @@ namespace TheConfectionRebirth.TilePostDraws
 		{
 
 			Tile tile = Main.tile[i, j];
-			return tile.HasTile && tile.TileType == TileID.ArgonMoss;
+			return tile.HasTile && tile.TileType == mod.TileType("CreamMoss");
 		}
 		bool HasTile(int i, int j)
 		{
